@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Orçamento</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+<div class="container">
+        <header>
+            <div class="logo">
+                <img class="logo_header_img"src="img/logo_claro.svg">
+                <p>SmartCoin</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="calc.html">CALCULADORA</a></li>
+                    <li><a href="table.html">TABELA DE GASTO</a></li>
+                    <li><a href="cripto.html">CRIPTO</a></li>
+                </ul>
+            </nav>
+            <img class="style_mode" src="img/LightMode.svg">
+        </header>
+        <h1>Tabela Para controle de gastos</h1>
+        <hr>
+        <main>
+            
+            <table>
+                <tr>
+                    <th>Orçamento</th>
+                    <th>Valor Gasto</th>
+                    <th>Devo Gastar</th>
+                    <th>Utilizado</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Custos fixos</td>
+                    <td><input type="text" id="gastoCustosFixos" value="0"></td>
+                    <td id="devoGastarCustosFixos">R$ 0,00</td>
+                    <td id="utilizadoCustosFixos">0,00%</td>
+                    <td id="totalCustosFixos">0,00%</td>
+                </tr>
+                <tr>
+                    <td>Conforto</td>
+                    <td><input type="text" id="gastoConforto" value="0"></td>
+                    <td id="devoGastarConforto">R$ 0,00</td>
+                    <td id="utilizadoConforto">0,00%</td>
+                    <td id="totalConforto">0,00%</td>
+                </tr>
+                <tr>
+                    <td>Metas</td>
+                    <td><input type="text" id="gastoMetas" value="0"></td>
+                    <td id="devoGastarMetas">R$ 0,00</td>
+                    <td id="utilizadoMetas">0,00%</td>
+                    <td id="totalMetas">0,00%</td>
+                </tr>
+                <tr>
+                    <td>Prazeres</td>
+                    <td><input type="text" id="gastoPrazeres" value="0"></td>
+                    <td id="devoGastarPrazeres">R$ 0,00</td>
+                    <td id="utilizadoPrazeres">0,00%</td>
+                    <td id="totalPrazeres">0,00%</td>
+                </tr>
+                <tr>
+                    <td>Liberdade Financeira</td>
+                    <td><input type="text" id="gastoLiberdadeFinanceira" value="0"></td>
+                    <td id="devoGastarLiberdadeFinanceira">R$ 0,00</td>
+                    <td id="utilizadoLiberdadeFinanceira">0,00%</td>
+                    <td id="totalLiberdadeFinanceira">0,00%</td>
+                </tr>
+                <tr>
+                    <td>Conhecimento</td>
+                    <td><input type="text" id="gastoConhecimento" value="0"></td>
+                    <td id="devoGastarConhecimento">R$ 0,00</td>
+                    <td id="utilizadoConhecimento">0,00%</td>
+                    <td id="totalConhecimento">0,00%</td>
+                </tr>
+            </table>
+            <div style="margin-top: 15px;">
+                <strong>Salário: <input type="text" id="salario" value="0"></strong>
+            </div>
+            <div style="margin-top: 5px;">
+                <strong>Total Gasto: <span id="totalGasto">R$ 0,00</span></strong>
+            </div>
+            <div style="margin-top: 5px;">
+                <strong>Utilizado: <span id="utilizado">0,00%</span></strong>
+            </div>
+            <button class="btn" onclick="calcular()">CALCULAR</button>
+    
+        </main>
+</div>
+    <footer class="rodape">
+        <img class="logo_rodape_img"src="img/logo_escuro.svg">
+        <p>Este site é um projeto acadêmico desenvolvido por estudantes da Faculdade Tiradentes para a disciplina de 
+        Desenvolvimento Web. Nosso objetivo é compartilhar informações sobre finanças de forma educativa. As informações 
+        aqui apresentadas não têm a intenção de induzir ou substituir aconselhamentos financeiros profissionais.</p>
+        <p>Copyright © SmartCoin. Todos os direitos reservados</p>
+    </footer>
+    <script src="table.js"></script>
+</body>
+</html>

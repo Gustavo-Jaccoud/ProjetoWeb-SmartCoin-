@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --background-color: #181A20;
+    --text-color: #DEE3E1;
+    --hover-color: #ffbf00;
+    --amerelo-claro: #FCD535;
+    --cinza-claro: #D9D9D9;
+}
+
+body {
+    background: var(--background-color);
+    font-family: "Inter";
+    display: flex;
+    color: var(--text-color);
+    justify-content: center;
+}
+
+.container {
+    width: 1366px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo_header_img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 20px;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+header .style_mode {
+    width: 58px;
+    height: 29px;
+}
+main {
+    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    width: 1366px;
+    
+}
+.esquerda{
+    display: flex;
+    width: 1366px;
+    justify-content: space-between;
+}
+.noticia_principal{
+    position: relative;
+    height: 416px;
+}
+.img_principal{
+    width: 900px; 
+    height: 416px;
+
+}
+.manchete_principal{
+    position: absolute;
+    width: 860px;
+    bottom: 10px;
+    left: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 9px;
+}
+.manchete_principal a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.manchete_principal a:hover{
+    color: var(--amerelo-claro);
+}
+
+.sidebar {
+    width: 406px;
+    height: 832px;
+    background: var(--amerelo-claro);
+    border-radius: 9px;
+}
+
+.sidebar .titulo_sidebar {
+    color: var(--background-color);
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.sidebar .lista_noticias {
+    padding: 0; 
+}
+.sidebar .lista_noticias li {
+    list-style: none;
+    display: flex;
+    height: 128px;
+    text-align: left;
+    align-items: center;
+    background-color: var(--cinza-claro);
+    padding-left: 27px;
+    padding-right: 19px;
+    font-size: 24px;
+    justify-content: space-between;
+    margin: 0; 
+    margin-bottom: 4px; 
+    border-radius: 9px;
+}
+
+.sidebar .lista_noticias li a {
+    color: var(--background-color);
+    width: 284px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar .lista_noticias li a:hover {
+    color: #ff9812;
+}
+
+.sidebar .lista_noticias li span {
+    font-family: "Nunito";
+    color: var(--background-color);
+    font-size: 64px;
+    font-weight: bold;
+    margin-right: 37px;
+}
+.grid_noticia_1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+    width: 900px;
+    margin-top: -300px;
+}
+.grid_noticia_2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    margin-top: 34px;
+    width: 1366px;
+}
+.card_noticia {
+    border-radius: 9px;
+}
+
+.card_noticia img {
+    width: 100%;
+    height: 271px;
+    border-radius: 9px;
+}
+
+.card_noticia p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.card_noticia a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.card_noticia a:hover{
+    color: var(--hover-color);
+}
+footer {
+    margin-top: 200px;
+    background-color: var(--amerelo-claro);
+    width: 100vw; /* Garante que o footer cubra toda a largura da tela */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative; /* Se necessário para evitar sobreposições estranhas */
+    left: 50%; /* Ajuste para centralizar */
+    transform: translateX(-50%); /* Compensa o alinhamento */
+}
+
+footer .logo_rodape_img {
+    width: 50px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 1366px;
+    text-align: center;
+    color: var(--background-color);
+}
+
+/* news css*/
+
+.fundo_manchete{
+    background-color: var(--amerelo-claro);
+    height: 410px;
+}
