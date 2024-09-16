@@ -8,7 +8,7 @@ function calcular() {
         'LiberdadeFinanceira': parseFloat(document.getElementById('gastoLiberdadeFinanceira').value),
         'Conhecimento': parseFloat(document.getElementById('gastoConhecimento').value)
     };
-    
+
     const totalGasto = Object.values(gastos).reduce((acc, val) => acc + val, 0);
     document.getElementById('totalGasto').textContent = `R$ ${totalGasto.toFixed(2)}`;
 
@@ -29,11 +29,11 @@ function calcular() {
         const devoGastar = salario * percentuais[key];
         const utilizadoPorcentagem = (gasto / devoGastar) * 100;
         const totalPorcentagem = (gasto / totalGasto) * 100;
-        
+
         document.getElementById(`devoGastar${key}`).textContent = `R$ ${devoGastar.toFixed(2)}`;
         document.getElementById(`utilizado${key}`).textContent = `${utilizadoPorcentagem.toFixed(2)}%`;
         document.getElementById(`total${key}`).textContent = `${totalPorcentagem.toFixed(2)}%`;
-        
+
         if (utilizadoPorcentagem > 100) {
             document.getElementById(`utilizado${key}`).classList.add('red');
             document.getElementById(`utilizado${key}`).classList.remove('green');
