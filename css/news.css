@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --background-color: #181A20;
     --text-color: #DEE3E1;
@@ -45,8 +46,8 @@ header p {
 }
 
 .logo_header_img {
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
@@ -75,7 +76,8 @@ header .style_mode {
     width: 58px;
     height: 29px;
 }
-.fundo_manchete{
+
+.fundo_manchete {
     margin-top: 94px;
     background-color: var(--amerelo-claro);
     height: 410px;
@@ -83,60 +85,70 @@ header .style_mode {
     justify-content: center;
 }
 
-.fundo_manchete h1{
+.fundo_manchete h1 {
     border-top: 60px;
     width: 1050px;
     color: var(--background-color);
     font-size: 42px;
     font-weight: bold;
 }
-.fundo_manchete img{
+
+.fundo_manchete img {
     position: absolute;
     margin-top: 205px;
     width: 1050px;
     height: 410px;
 }
-.conteudo{
+
+.conteudo {
     width: 1050px;
     display: flex;
     justify-content: space-between;
 }
-.esquerda{
+
+.esquerda {
     margin-top: 200px;
     width: 705px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.esquerda p .texto{
+
+.esquerda p .texto {
     font-size: 18px;
     margin-top: 400px;
 }
-.esquerda .autor{
+
+.esquerda .autor {
     width: 705px;
     text-align: left;
     font-size: 13px;
     color: var(--amerelo-claro);
 }
-.esquerda img{
+
+.esquerda img {
     width: 560px;
     height: 320px;
 }
-.esquerda .descriimg{
-    width: 550  px;
+
+.esquerda .descriimg {
+    width: 550 px;
     padding-left: 10px;
-    border-left: 2px solid var(--amerelo-claro); 
+    border-left: 2px solid var(--amerelo-claro);
     font-size: 14px
 }
-.direita{
+
+.direita {
     margin-top: 200px;
     width: 205px;
 }
-.titulo_recomendacao{
+
+.titulo_recomendacao {
     text-align: center;
     color: var(--amerelo-claro);
 }
-.recomendacao{
+
+.recomendacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,23 +158,28 @@ header .style_mode {
     background-color: #f0eee6;
     margin-bottom: 15px;
 }
-.recomendacao img{
+
+.recomendacao img {
     border-radius: 9px;
     width: 205px;
     height: 205px;
 }
-.recomendacao p{
+
+.recomendacao p {
     font-weight: bolder;
     width: 195px;
 }
+
 .recomendacao a {
     color: var(--background-color);
     text-decoration: none;
     font-weight: bold;
 }
-.recomendacao a:hover{
+
+.recomendacao a:hover {
     color: #c27604;
 }
+
 footer {
     margin-top: 200px;
     background-color: var(--amerelo-claro);
@@ -173,9 +190,9 @@ footer {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    position: relative; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer .logo_rodape_img {
@@ -192,7 +209,7 @@ footer p {
 
 /* news css*/
 
-.fundo_manchete{
+.fundo_manchete {
     background-color: var(--amerelo-claro);
     height: 410px;
 }

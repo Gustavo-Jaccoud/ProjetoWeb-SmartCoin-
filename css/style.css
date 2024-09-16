@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --background-color: #181A20;
     --text-color: #DEE3E1;
@@ -43,8 +44,8 @@ header p {
 }
 
 .logo_header_img {
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
@@ -73,43 +74,49 @@ header .style_mode {
     width: 58px;
     height: 29px;
 }
+
 main {
     margin-top: 84px;
     display: flex;
     flex-direction: column;
     width: 1366px;
-    
+
 }
-.esquerda{
+
+.esquerda {
     display: flex;
     width: 1366px;
     justify-content: space-between;
 }
-.noticia_principal{
+
+.noticia_principal {
     position: relative;
     height: 416px;
 }
-.img_principal{
-    width: 900px; 
+
+.img_principal {
+    width: 900px;
     height: 416px;
 
 }
-.manchete_principal{
+
+.manchete_principal {
     position: absolute;
     width: 860px;
     bottom: 10px;
     left: 10px;
-    
+
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px;
     border-radius: 9px;
 }
-.manchete_principal a{
+
+.manchete_principal a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.manchete_principal a:hover{
+.manchete_principal a:hover {
     color: var(--amerelo-claro);
 }
 
@@ -128,9 +135,11 @@ main {
     font-weight: bold;
     text-align: center;
 }
+
 .sidebar .lista_noticias {
-    padding: 0; 
+    padding: 0;
 }
+
 .sidebar .lista_noticias li {
     list-style: none;
     display: flex;
@@ -142,8 +151,8 @@ main {
     padding-right: 19px;
     font-size: 24px;
     justify-content: space-between;
-    margin: 0; 
-    margin-bottom: 4px; 
+    margin: 0;
+    margin-bottom: 4px;
     border-radius: 9px;
 }
 
@@ -165,20 +174,23 @@ main {
     font-weight: bold;
     margin-right: 37px;
 }
-.grid_noticia_1{
+
+.grid_noticia_1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 34px;
     width: 900px;
     margin-top: -300px;
 }
-.grid_noticia_2{
+
+.grid_noticia_2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 34px;
     margin-top: 34px;
     width: 1366px;
 }
+
 .card_noticia {
     border-radius: 9px;
 }
@@ -193,27 +205,30 @@ main {
     margin-top: 10px;
     font-weight: bold;
 }
+
 .card_noticia a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
 }
-.card_noticia a:hover{
+
+.card_noticia a:hover {
     color: var(--hover-color);
 }
+
 footer {
     margin-top: 200px;
     background-color: var(--amerelo-claro);
-    width: 100vw; /* Garante que o footer cubra toda a largura da tela */
+    width: 100vw;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    position: relative; /* Se necessário para evitar sobreposições estranhas */
-    left: 50%; /* Ajuste para centralizar */
-    transform: translateX(-50%); /* Compensa o alinhamento */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer .logo_rodape_img {
@@ -230,7 +245,7 @@ footer p {
 
 /* news css*/
 
-.fundo_manchete{
+.fundo_manchete {
     background-color: var(--amerelo-claro);
     height: 410px;
 }
